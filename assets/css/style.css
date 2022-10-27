@@ -1,0 +1,46 @@
+.row{
+    display: flex;
+}
+.card{
+    border: 1px solid gray;
+    border-radius: 3%;
+    background-color: rgba(122, 161,55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding: 1em;
+    
+}
+.img_card{
+    width: 60%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    color: white;
+}
+.precio{
+    font-size: 1.2em;
+    color: white;
+}
+.btn{
+    background-color: orange;
+    color: white;
+}
+#valorColor{
+    background-color:  black ;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline;
+    margin-left: 20px;
+}
+.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+}

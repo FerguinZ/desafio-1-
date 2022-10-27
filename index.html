@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="row">
+    <div class="card">
+        <img src="assets/img/AVANT-P870DMG-GAMING-LAPTOP.png" alt="" class="img_card">
+        <p class="titulo">Laptop Gamer AMD </p>
+        <form>
+            <div class="formulario">
+            <input type="number" step="1" id="cantidad" value="" placeholder="Cantidad"/>
+            <input type="text"  id="color" value="" placeholder="Color"/>
+        </div>
+        </form>
+        <p class="precio">Precio: 400.000</p>
+        <input type="hidden" id="precio" value="400000">
+        <button class="btn" onclick="
+
+        var inputCantidad = document.querySelector('#cantidad');
+        var inputColor = document.querySelector('#color');
+        
+
+        var total = Number(cantidad.value) * 400000;
+
+        var valorTotal = document.querySelector('#valorTotal');
+        var valorCantidad = document.querySelector('#valorCantidad');
+        var valorColor = document.querySelector('#valorColor');
+
+        valorTotal.innerHTML = total
+        valorCantidad.innerHTML = cantidad.value;
+        valorColor.style.backgroundColor = inputColor.value
+
+        "> Calcular total</button>
+
+    </div>
+
+    <div class="resultados">
+    <div class="row">Total: <span id="valorTotal"></span></div>
+    <div class="row">Cantidad: <span id="valorCantidad"></span></div>
+    <div class="row">Color: <div id="valorColor"></div></div>
+    </div>
+</div>
+</body>
+</html>
